@@ -3,87 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="Pa-O Music, Music App, Responsive Web Template">
     <title>Pa-O Music</title>
     <link rel="shortcut icon" href="images/icon.png">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
-    <script src="js/jquery-1.11.1.min.js"></script>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet" type="text/css">
     <style>
+        /* Body style */
         body {
             margin: 0;
-            padding: 0;
-            background-color: white; /* Background အဖြူ */
             font-family: 'Open Sans', sans-serif;
+            background-color: white; /* Background အဖြူ */
             color: black; /* စာသားအနက် */
         }
+
+        /* Header section */
         .header {
             text-align: center;
-            padding: 30px 0;
+            padding: 20px 20px;
+            background-color: white; /* Background အဖြူ */
+            color: black; /* စာသားအနက် */
         }
+
+        .header img {
+            width: 250px; /* ပုံအရွယ်အစား */
+            height: auto;
+            margin-bottom: 20px;
+        }
+
         .header h1 {
-            font-size: 36px;
+            font-size: 48px;
             margin: 0;
         }
+
         .header p {
-            font-size: 18px;
-            margin: 10px 0;
+            font-size: 20px;
+            margin: 10px 0 20px;
         }
-        .container {
+
+        /* Download buttons */
+        .button {
+            text-align: center;
             margin-top: 20px;
-            text-align: center;
-            padding: 20px;
         }
-        .container img {
-            max-width: 80%;
-            height: auto;
-            border-radius: 10px;
+
+        .button h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
         }
-        .btn {
+
+        .button a img {
             margin: 10px;
-            padding: 10px 20px;
-            text-decoration: none;
-            font-size: 16px;
-            color: white;
-            background-color: #007BFF;
-            border-radius: 5px;
+            width: 150px;
+            height: auto;
         }
-        .btn:hover {
-            background-color: #0056b3;
-        }
+
+        /* Footer */
         .footer-section {
-            margin-top: 30px;
             text-align: center;
-            padding: 10px 0;
-            background: #f1f1f1;
+            margin-top: 50px;
+            padding: 20px 10px;
+            background-color: #f8f9fa;
+            color: #6c757d;
         }
     </style>
 </head>
 <body>
     <!-- Header Section -->
     <div class="header">
+        <!-- iPhone image -->
+        <img src="images/iphone.png" alt="Pa-O Music App">
         <h1>Pa-O Music</h1>
         <p>Enjoy the best Pa-O songs and playlists!</p>
     </div>
 
-    <!-- Main Content Section -->
-    <div class="container">
-        <img src="images/iphone.png" alt="Pa-O Music App">
-        <p class="mt-3">Experience music like never before with the Pa-O Music App!</p>
-    </div>
-
-    <!-- Download Section -->
-    <div class="container">
+    <!-- Download Buttons -->
+    <div class="button">
         <h2>Download Now!</h2>
-        <a class="btn" href="https://github.com/KhunArr/PaOMusic/blob/master/onlinemusic_v1.5.apk?raw=true">
-            Download APK
+        <a href="https://github.com/KhunArr/PaOMusic/blob/master/onlinemusic_v1.5.apk?raw=true">
+            <img src="images/appstore1.png" alt="Download from GitHub">
+        </a>
+        <a href="paoh.music.apk">
+            <img src="images/appstore2.png" alt="Download APK">
         </a>
     </div>
 
     <!-- Footer Section -->
     <div class="footer-section">
-        <p>&copy; 2020 Pa-O Music | All Rights Reserved</p>
+        <p>Copyright © 2020 Pa-O Music</p>
     </div>
 </body>
 </html>
