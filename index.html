@@ -13,21 +13,28 @@
         body {
             margin: 0;
             font-family: 'Open Sans', sans-serif;
-            background-color: white;
-            color: black;
+            background-color: white; /* Background အဖြူ */
+            color: black; /* စာသားအနက် */
         }
 
         /* Header section */
         .header {
             text-align: center;
-            padding: 20px;
-            background-color: white;
-            color: black;
+            padding: 20px 20px;
+            background-color: white; /* Background အဖြူ */
+            color: black; /* စာသားအနက် */
+        }
+
+        .header img {
+            width: 250px; /* ပုံအရွယ်အစား */
+            height: auto;
+            margin-bottom: 20px;
+            margin-top: 0; /* ပုံကို အပေါ်ဘက် ထားသည် */
         }
 
         .header h1 {
             font-size: 48px;
-            margin-top: 0;
+            margin: 0;
         }
 
         .header p {
@@ -35,70 +42,56 @@
             margin: 10px 0 20px;
         }
 
-        /* Bootstrap carousel style */
-        .carousel-item img {
-            width: 100%;
-            height: 500px; /* Adjust the height of the images */
-            object-fit: cover;
+        /* Download buttons */
+        .button {
+            text-align: center;
+            margin-top: 20px;
         }
 
-        .carousel-control-prev, .carousel-control-next {
-            filter: invert(100%);
+        .button h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
         }
 
-        /* Footer section */
+        .button a img {
+            margin: 10px;
+            width: 150px;
+            height: auto;
+        }
+
+        /* Footer */
         .footer-section {
             text-align: center;
             margin-top: 50px;
-            padding: 20px;
+            padding: 20px 10px;
             background-color: #f8f9fa;
             color: #6c757d;
         }
     </style>
 </head>
 <body>
-
     <!-- Header Section -->
     <div class="header">
+        <!-- iPhone image -->
+        <img src="images/iphone.png" alt="Pa-O Music App">
         <h1>Pa-O Music</h1>
         <p>Enjoy the best Pa-O songs and playlists!</p>
     </div>
 
-    <!-- Carousel Section -->
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <!-- iPhone Image (1st item) -->
-            <div class="carousel-item active">
-                <img src="images/iphone.png" class="d-block w-100" alt="iPhone">
-            </div>
-            <!-- Image 2 -->
-            <div class="carousel-item">
-                <img src="images/iphone.png" class="d-block w-100" alt="Image 2">
-            </div>
-            <!-- Image 3 -->
-            <div class="carousel-item">
-                <img src="images/iphone.png" class="d-block w-100" alt="Image 3">
-            </div>
-        </div>
-
-        <!-- Carousel Controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+    <!-- Download Buttons -->
+    <div class="button">
+        <h2>Download Now!</h2>
+        <a href="https://github.com/KhunArr/PaOMusic/blob/master/onlinemusic_v1.5.apk?raw=true">
+            <img src="images/appstore1.png" alt="Download from GitHub">
+        </a>
+        <a href="paoh.music.apk">
+            <img src="images/appstore2.png" alt="Download APK">
+        </a>
     </div>
 
     <!-- Footer Section -->
     <div class="footer-section">
         <p>Copyright © 2020 Pa-O Music</p>
     </div>
-
-    <!-- Bootstrap JS (optional for carousel functionality) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
 </body>
 </html>
