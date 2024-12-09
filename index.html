@@ -14,30 +14,41 @@
         body {
             margin: 0;
             padding: 0;
-            background: url('images/banner.jpg') no-repeat center center fixed;
-            background-size: cover;
+            background-color: white;
             font-family: 'Open Sans', sans-serif;
-            color: white;
-            text-shadow: 1px 1px 2px black;
+            color: black;
         }
         .header {
             text-align: center;
-            padding: 50px 0;
+            padding: 30px 0;
         }
         .container {
             margin-top: 20px;
-            background: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
+            text-align: center;
             padding: 20px;
+        }
+        .container img {
+            max-width: 80%;
+            height: auto;
             border-radius: 10px;
         }
         .btn {
             margin: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 16px;
+            color: white;
+            background-color: #007BFF;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #0056b3;
         }
         .footer-section {
             margin-top: 30px;
             text-align: center;
             padding: 10px 0;
-            background: rgba(0, 0, 0, 0.5);
+            background: #f1f1f1;
         }
     </style>
 </head>
@@ -49,19 +60,16 @@
     </div>
 
     <!-- Main Content Section -->
-    <div class="container text-center">
-        <img src="images/iphone.png" alt="Pa-O Music App on iPhone" style="max-width:80%; height:auto; border-radius:15px;">
+    <div class="container">
+        <img src="images/iphone.png" alt="Pa-O Music App">
         <p class="mt-3">Experience music like never before with the Pa-O Music App!</p>
     </div>
 
     <!-- Download Section -->
-    <div class="container text-center mt-5">
+    <div class="container">
         <h2>Download Now!</h2>
-        <a class="btn btn-primary" href="https://github.com/KhunArr/PaOMusic/blob/master/onlinemusic_v1.5.apk?raw=true">
-            <img src="images/appstore1.png" alt="Download from GitHub">
-        </a>
-        <a class="btn btn-secondary" href="paoh.music.apk">
-            <img src="images/appstore2.png" alt="Download APK">
+        <a class="btn" href="https://github.com/KhunArr/PaOMusic/blob/master/onlinemusic_v1.5.apk?raw=true">
+            Download APK
         </a>
     </div>
 
